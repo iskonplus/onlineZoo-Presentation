@@ -4,7 +4,9 @@
 ---
 
 marp: true
+
 theme: gaia
+
 paginate: true
 
 ---
@@ -41,9 +43,21 @@ Frontend Developer Project
 
 ---
 
-# 🚀 Initial Version
+# 🐻 Animal Page
 
-![Landing](./images/landing.png)
+![Animal](./images/animal.png)
+
+- Dedicated page for each animal  
+
+- Dynamic routing  
+
+- Structured UI  
+
+👉 Shows component-based architecture  
+
+---
+
+# 🚀 Initial Version
 
 ## Vanilla TypeScript
 
@@ -61,8 +75,6 @@ Frontend Developer Project
 
 # 🔄 Migration to Angular
 
-![Structure](./images/structure.png)
-
 ## Why Angular?
 
 - Better architecture  
@@ -76,8 +88,6 @@ Frontend Developer Project
 ---
 
 # 🏗 Architecture
-
-![Structure](./images/structure.png)
 
 - Components → UI  
 
@@ -107,7 +117,6 @@ Frontend Developer Project
 
 Example state structure:
 
-
 ```ts
 
 interface ResponseState<T> {
@@ -119,14 +128,12 @@ interface ResponseState<T> {
 
 ```
 
-- Simulates API behavior  
-- Handles loading and errors  
-
 ---
 
 # 🔌 API Layer
 
 ## Universal GET Request
+
 ```ts
 getAll<T>(path: string): Observable<ResponseState<T>> {
   return this.http.get<T>(path).pipe(
@@ -152,7 +159,9 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 ```
 
 - Generic typing  
+
 - Centralized data handling  
+
 - Reusable across the app  
 
 ---
@@ -162,6 +171,7 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 ![Slider](./images/slider.png)
 
 - Built from scratch  
+
 - No external libraries  
 
 👉 Logic:
@@ -172,6 +182,18 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 
 ---
 
+# 🎨 UI / UX
+
+![Popup](./images/popup.png)
+
+- Popups (auth, map, donate)  
+
+- Interactive elements  
+
+- User-friendly design  
+
+---
+
 # ⚡ Performance Optimization
 
 ## Angular @defer
@@ -179,27 +201,19 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 @defer (on viewport)
 
 - Lazy loading sections  
+
 - Faster initial load  
-
----
-
-# 🎨 UI / UX
-
-![Popup](./images/popup.png)
-
-- Popups (auth, map, donate)  
-- Navigation between animals  
-- Responsive layout  
-
-👉 Clean user experience  
 
 ---
 
 # 🧠 Challenges
 
 - Migration from DOM to Angular  
+
 - State management without backend  
+
 - Custom slider implementation  
+
 - Animations without libraries  
 
 ---
@@ -207,7 +221,9 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 # 📈 Results
 
 - Improved performance  
+
 - Better architecture  
+
 - Reusable logic  
 
 👉 Production-ready structure  
@@ -217,8 +233,11 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 # 💡 What I improved
 
 - Scalable architecture  
+
 - Clean code structure  
+
 - Optimized loading  
+
 - Better UX  
 
 ---
@@ -228,7 +247,9 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
 👉 This project demonstrates:
 
 - Strong JavaScript fundamentals  
+
 - Angular architecture skills  
+
 - Ability to refactor real applications  
 
 ---
