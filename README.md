@@ -140,14 +140,7 @@ getAll<T>(path: string): Observable<ResponseState<T>> {
       error: null,
       loading: true,
     }),
-   
-```
-
----
-
-```ts
-
-    catchError((err) =>
+  catchError((err) =>
       of({
         data: null,
         error: err.message,
